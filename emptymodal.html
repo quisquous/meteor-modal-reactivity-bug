@@ -1,0 +1,16 @@
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <p>Click this text to display a modal; it doesn't react properly the first time</p>
+
+  <div id="modal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+      </div>
+      <div class="modal-body">
+        This should say hello: {{sessionVar}}
+      </div>
+  </div>
+</template>
